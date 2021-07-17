@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/ElementPortfolioStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">    
+    <title>{{ post.tittle }}</title>
+</head>
+<body>
+    
+    <section class = "intro-section" > 
+        <div class="text-container">
+            <h1 class = "tittle">{{ post.tittle }}</h1>
+        <span class = "intro-text">
+            {{ post.date }}
+        </span>
+        </div>
+        
+    </section>
+
+    <section class = 'info-section'>
+        <span class = 'info-text'>{{ post.anons }} </span><br><br><br><br>
+            <img class = 'info-img' src="{{ post.urlImg }}" width=1200px alt=""><br><br>
+            <span class = 'info-desc'>{{ post.text }}</span>
+    </section>
+
+    <section class = 'Actor-section'>
+        <h1>Исполнитель:</h1><br>
+        <div class="Actor-flex-container">
+
+            <img class = 'Flex-element Actor-img' src="style/Img/Vg4y2C1jucI.jpg" width=300px alt="">
+
+            <div class="Flex-element Actor-text">
+                <h2>Lorem Ipsum</h2>
+                <span>Сайт рыбатекст поможет дизайнеру, верстальщику, 
+                    вебмастеру сгенерировать несколько абзацев более менее осмысленного текста
+                     рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в
+                      домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. </span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <style>
+        .intro-section{
+        height:70vh;
+        width:100%;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.671) 0%, rgba(255, 255, 255, 0) 100%), url('{{ post.urlImg }}');
+        background-size: 100%;
+        margin-top:-30px;
+        font-size:20px;
+        position: relative;
+}
+    </style>
+
+
+</body>
+</html>
