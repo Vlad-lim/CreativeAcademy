@@ -73,7 +73,8 @@ img {
 
 /*Intro*/
 .Intro-section{
-    background: url("Img/Блокнот.jpeg") center;
+    background: url("img/Intro_photo.png")
+    center no-repeat;
     height:100vh;
     width:100%;
     padding-right: 50px;
